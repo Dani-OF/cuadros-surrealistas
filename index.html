@@ -1,12 +1,206 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cuadros Surrealistas</title>
+    <title>ONIRIA | Galería de Arte Surrealista</title>
+    <!-- Tipografías de Google Fonts para contraste editorial -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Cuadros Surrealistas</h1>
+
+    <!-- Textura de grano cinematográfico superpuesta en toda la pantalla -->
+    <div class="noise-overlay"></div>
+
+    <!-- Orbes de luz ambiental flotantes en el fondo -->
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+    <div class="ambient-orb orb-3"></div>
+
+    <!-- Navegación Minimalista -->
+    <header class="navbar">
+        <a href="#" class="logo">ONIRIA<span>.art</span></a>
+        <nav>
+            <a href="#manifiesto" class="nav-link">Manifiesto</a>
+            <a href="#galeria" class="nav-link">Obras</a>
+            <a href="#contacto" class="nav-link">Adquisición</a>
+        </nav>
+    </header>
+
+    <!-- Sección Hero (Portada) -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="subtitle">COLECCIÓN PRIVADA DE ARTE ONÍRICO</p>
+            <h1 class="glitch-title" data-text="DONDE LA REALIDAD SE DERRITE">DONDE LA REALIDAD SE DERRITE</h1>
+            <p class="hero-desc">Piezas únicas pintadas al óleo que desafían la gravedad, el tiempo y la lógica del subconsciente.</p>
+            <a href="#galeria" class="btn-surreal">Explorar el Subconsciente</a>
+        </div>
+
+        <!-- Portal visual morfológico con CSS puro -->
+        <div class="hero-visual">
+            <div class="liquid-portal">
+                <img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?q=80&w=1000&auto=format&fit=crop" alt="Obra Abstracta Surrealista">
+            </div>
+            <div class="floating-ring"></div>
+        </div>
+    </section>
+
+    <!-- Cinta infinita animada (Marquee) -->
+    <div class="marquee-container">
+        <div class="marquee-track">
+            <span>ÓLEO SOBRE LIENZO • PIEZAS ÚNICAS • SUBCONSCIENTE • CERTIFICADO DE AUTENTICIDAD • ENVÍOS INTERNACIONALES • </span>
+            <span>ÓLEO SOBRE LIENZO • PIEZAS ÚNICAS • SUBCONSCIENTE • CERTIFICADO DE AUTENTICIDAD • ENVÍOS INTERNACIONALES • </span>
+        </div>
+    </div>
+
+    <!-- Sección Manifiesto -->
+    <section id="manifiesto" class="manifesto">
+        <div class="manifesto-box">
+            <span class="eye-symbol">👁</span>
+            <h2>"No pinto lo que veo, pinto lo que el silencio grita cuando cierro los ojos."</h2>
+            <p>Cada cuadro es una ventana irrepetible hacia dimensiones paralelas. No producimos réplicas ni impresiones en serie; cada lienzo es una entidad original creada para transformar la energía de tu espacio.</p>
+        </div>
+    </section>
+
+    <!-- Galería de Cuadros -->
+    <section id="galeria" class="gallery-section">
+        <div class="section-header">
+            <h2>CATÁLOGO DE SUEÑOS</h2>
+            <p>Haz clic en una obra para inspeccionar su aura</p>
+        </div>
+
+        <div class="gallery-grid">
+            <!-- Obra 1 -->
+            <article class="art-card">
+                <a href="#modal-1" class="art-frame">
+                    <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?q=80&w=800&auto=format&fit=crop" alt="El Susurro del Tiempo">
+                    <div class="art-overlay">
+                        <span>Inspeccionar Obra</span>
+                    </div>
+                </a>
+                <div class="art-info">
+                    <h3>01. El Susurro del Tiempo</h3>
+                    <p class="specs">Óleo sobre lino belga • 120 x 90 cm</p>
+                </div>
+            </article>
+
+            <!-- Obra 2 -->
+            <article class="art-card offset-card">
+                <a href="#modal-2" class="art-frame">
+                    <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=800&auto=format&fit=crop" alt="Arquitectura de la Memoria">
+                    <div class="art-overlay">
+                        <span>Inspeccionar Obra</span>
+                    </div>
+                </a>
+                <div class="art-info">
+                    <h3>02. Arquitectura de la Memoria</h3>
+                    <p class="specs">Técnica mixta y pan de oro • 100 x 100 cm</p>
+                </div>
+            </article>
+
+            <!-- Obra 3 -->
+            <article class="art-card">
+                <a href="#modal-3" class="art-frame">
+                    <img src="https://images.unsplash.com/photo-1549490349-8643362247b5?q=80&w=800&auto=format&fit=crop" alt="Eclipses Internos">
+                    <div class="art-overlay">
+                        <span>Inspeccionar Obra</span>
+                    </div>
+                </a>
+                <div class="art-info">
+                    <h3>03. Eclipses Internos</h3>
+                    <p class="specs">Óleo y pigmentos minerales • 150 x 110 cm</p>
+                </div>
+            </article>
+
+            <!-- Obra 4 -->
+            <article class="art-card offset-card">
+                <a href="#modal-4" class="art-frame">
+                    <img src="https://images.unsplash.com/photo-1536924940846-227afb31e2a5?q=80&w=800&auto=format&fit=crop" alt="Gravedad Cero">
+                    <div class="art-overlay">
+                        <span>Inspeccionar Obra</span>
+                    </div>
+                </a>
+                <div class="art-info">
+                    <h3>04. Gravedad Cero</h3>
+                    <p class="specs">Óleo sobre lienzo • 80 x 120 cm</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Modales CSS Puro (:target) para ver detalles sin JS -->
+    <div id="modal-1" class="css-modal">
+        <div class="modal-content">
+            <a href="#galeria" class="close-modal">&times;</a>
+            <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?q=80&w=1000&auto=format&fit=crop" alt="El Susurro del Tiempo">
+            <div class="modal-details">
+                <h3>El Susurro del Tiempo</h3>
+                <p>Una exploración cromática sobre la fragilidad de los recuerdos y la fluidez de las horas. Pieza única firmada al reverso.</p>
+                <a href="https://wa.me/1234567890?text=Hola,%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20la%20obra%20'El%20Susurro%20del%20Tiempo'" target="_blank" class="whatsapp-inline-btn">Consultar disponibilidad por WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-2" class="css-modal">
+        <div class="modal-content">
+            <a href="#galeria" class="close-modal">&times;</a>
+            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1000&auto=format&fit=crop" alt="Arquitectura de la Memoria">
+            <div class="modal-details">
+                <h3>Arquitectura de la Memoria</h3>
+                <p>Estructuras imposibles suspendidas en el vacío onírico, con destellos de pan de oro de 24 quilates.</p>
+                <a href="https://wa.me/1234567890?text=Hola,%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20la%20obra%20'Arquitectura%20de%20la%20Memoria'" target="_blank" class="whatsapp-inline-btn">Consultar disponibilidad por WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-3" class="css-modal">
+        <div class="modal-content">
+            <a href="#galeria" class="close-modal">&times;</a>
+            <img src="https://images.unsplash.com/photo-1549490349-8643362247b5?q=80&w=1000&auto=format&fit=crop" alt="Eclipses Internos">
+            <div class="modal-details">
+                <h3>Eclipses Internos</h3>
+                <p>Contraste profundo entre luz y sombra que evoca el despertar de la intuición.</p>
+                <a href="https://wa.me/1234567890?text=Hola,%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20la%20obra%20'Eclipses%20Internos'" target="_blank" class="whatsapp-inline-btn">Consultar disponibilidad por WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-4" class="css-modal">
+        <div class="modal-content">
+            <a href="#galeria" class="close-modal">&times;</a>
+            <img src="https://images.unsplash.com/photo-1536924940846-227afb31e2a5?q=80&w=1000&auto=format&fit=crop" alt="Gravedad Cero">
+            <div class="modal-details">
+                <h3>Gravedad Cero</h3>
+                <p>Formas orgánicas que levitan en un espacio atemporal. Incluye certificado de autenticidad.</p>
+                <a href="https://wa.me/1234567890?text=Hola,%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20la%20obra%20'Gravedad%20Cero'" target="_blank" class="whatsapp-inline-btn">Consultar disponibilidad por WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección Final de Contacto -->
+    <footer id="contacto" class="footer-cta">
+        <div class="cta-container">
+            <h2>¿UNA OBRA TE HA LLAMADO?</h2>
+            <p>Las piezas se asignan mediante conversación directa con el estudio. Escríbenos para recibir el dossier privado, precios y opciones de envío asegurado a todo el mundo.</p>
+            
+            <!-- Botón Principal de WhatsApp -->
+            <a href="https://wa.me/1234567890?text=Hola,%20vengo%20de%20la%20web%20ONIRIA%20y%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20las%20obras." target="_blank" class="whatsapp-hero-btn">
+                <svg viewBox="0 0 32 32" class="wa-icon"><path d="M16 2a13 13 0 0 0-11.1 19.7L3 29l7.5-1.9A13 13 0 1 0 16 2zm0 23.8a10.8 10.8 0 0 1-5.5-1.5l-.4-.2-4.4 1.1 1.2-4.3-.3-.4A10.8 10.8 0 1 1 16 25.8zm5.9-8.1c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.5-.5.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.6-.3z"/></svg>
+                <span>INICIAR DIÁLOGO POR WHATSAPP</span>
+            </a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ONIRIA GALERÍA SURREALISTA. TODOS LOS DERECHOS RESERVADOS.</p>
+        </div>
+    </footer>
+
+    <!-- Botón Flotante de WhatsApp siempre accesible -->
+    <a href="https://wa.me/+573113986478?text=Hola,%20me%20gustar%C3%ADa%20consultar%20por%20un%20cuadro." target="_blank" class="floating-wa" aria-label="Contactar por WhatsApp">
+        <svg viewBox="0 0 32 32"><path d="M16 2a13 13 0 0 0-11.1 19.7L3 29l7.5-1.9A13 13 0 1 0 16 2zm0 23.8a10.8 10.8 0 0 1-5.5-1.5l-.4-.2-4.4 1.1 1.2-4.3-.3-.4A10.8 10.8 0 1 1 16 25.8zm5.9-8.1c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.5-.5.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.6-.3z"/></svg>
+    </a>
+
 </body>
 </html>
